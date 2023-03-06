@@ -36,39 +36,16 @@
                                 <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lm-X3-RjI">
-                                <rect key="frame" x="20" y="-287" width="892" height="191"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="191" id="AEU-3P-OvT"/>
-                                </constraints>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lm-X3-RjI">
+                                <rect key="frame" x="97" y="59" width="759" height="167"/>
                                 <string key="text">Play
 Mail Pilot</string>
                                 <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="80"/>
                                 <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m0-4P-0lY">
-                                <rect key="frame" x="20" y="-287" width="892" height="191"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="191" id="LAq-42-HOY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="70"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hae-Fw-cg7">
-                                <rect key="frame" x="365" y="182.66666666666666" width="202" height="65"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Restart">
-                                    <fontDescription key="titleFontDescription" name="Dock51" family="Dock 51" pointSize="48"/>
-                                    <color key="baseForegroundColor" systemColor="systemYellowColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="RestartButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="yhd-j5-6yT"/>
-                                </connections>
-                            </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxX-nt-gIZ">
-                                <rect key="frame" x="391.33333333333331" y="182.66666666666666" width="149.33333333333331" height="65"/>
+                                <rect key="frame" x="290" y="234" width="372" height="65"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Start">
                                     <fontDescription key="titleFontDescription" name="Dock51" family="Dock 51" pointSize="48"/>
@@ -78,24 +55,47 @@ Mail Pilot</string>
                                     <action selector="StartButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="TsJ-7y-AiO"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hae-Fw-cg7">
+                                <rect key="frame" x="290" y="234" width="372" height="65"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Restart">
+                                    <fontDescription key="titleFontDescription" name="Dock51" family="Dock 51" pointSize="48"/>
+                                    <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="RestartButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="yhd-j5-6yT"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m0-4P-0lY">
+                                <rect key="frame" x="30" y="59" width="892" height="171"/>
+                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="70"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="VxX-nt-gIZ" firstAttribute="top" secondItem="5lm-X3-RjI" secondAttribute="bottom" constant="8" symbolic="YES" id="0Fg-q3-Hre"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="5lm-X3-RjI" secondAttribute="trailing" constant="76" id="1Rh-Zv-Bem"/>
                             <constraint firstItem="f3O-ZU-SGm" firstAttribute="baseline" secondItem="y6A-qK-mBf" secondAttribute="baseline" id="4Ix-wI-AX9"/>
-                            <constraint firstItem="Hae-Fw-cg7" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="B4z-q6-rdx"/>
-                            <constraint firstItem="6m0-4P-0lY" firstAttribute="trailing" secondItem="5lm-X3-RjI" secondAttribute="trailing" id="IW2-6x-Jbu"/>
-                            <constraint firstItem="f3O-ZU-SGm" firstAttribute="leading" secondItem="5lm-X3-RjI" secondAttribute="leading" id="KQK-Ef-iKf"/>
-                            <constraint firstItem="Hae-Fw-cg7" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="RZu-Pr-4m8"/>
-                            <constraint firstItem="VxX-nt-gIZ" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="RaM-9w-ofQ"/>
-                            <constraint firstItem="VxX-nt-gIZ" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="Vpt-YM-j2B"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="VxX-nt-gIZ" secondAttribute="bottom" constant="97" id="4WN-cq-MFl"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="Hae-Fw-cg7" secondAttribute="bottom" constant="97" id="9l7-Sg-Kl3"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="Hae-Fw-cg7" secondAttribute="trailing" constant="270" id="AbM-7O-seq"/>
+                            <constraint firstItem="Hae-Fw-cg7" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="290" id="CBK-r3-Tf2"/>
+                            <constraint firstItem="6m0-4P-0lY" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="30" id="FIL-0m-J4H"/>
+                            <constraint firstItem="5lm-X3-RjI" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="97" id="IR5-vn-xA3"/>
+                            <constraint firstItem="6m0-4P-0lY" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" id="SZR-e8-kvF"/>
+                            <constraint firstItem="5lm-X3-RjI" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" id="Uts-g3-5Gs"/>
                             <constraint firstItem="y6A-qK-mBf" firstAttribute="leading" secondItem="f3O-ZU-SGm" secondAttribute="trailing" constant="52" id="Vxc-Ig-E5g"/>
+                            <constraint firstItem="VxX-nt-gIZ" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="290" id="WhP-AX-NR8"/>
                             <constraint firstItem="f3O-ZU-SGm" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" id="btR-tJ-Szk"/>
-                            <constraint firstItem="6m0-4P-0lY" firstAttribute="leading" secondItem="5lm-X3-RjI" secondAttribute="leading" id="eYf-ah-HC7"/>
                             <constraint firstItem="f3O-ZU-SGm" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" id="k5j-wy-7OR"/>
-                            <constraint firstItem="y6A-qK-mBf" firstAttribute="trailing" secondItem="5lm-X3-RjI" secondAttribute="trailing" id="qz6-Z2-MAN"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="VxX-nt-gIZ" secondAttribute="trailing" constant="270" id="mCD-SL-7sR"/>
+                            <constraint firstItem="Hae-Fw-cg7" firstAttribute="top" secondItem="5lm-X3-RjI" secondAttribute="bottom" constant="8" symbolic="YES" id="mVr-Xj-Kdx"/>
                             <constraint firstItem="y6A-qK-mBf" firstAttribute="trailing" secondItem="3se-qz-xqx" secondAttribute="trailingMargin" id="r1V-YJ-9DS"/>
-                            <constraint firstItem="6m0-4P-0lY" firstAttribute="top" secondItem="5lm-X3-RjI" secondAttribute="top" id="zRl-57-ivR"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="6m0-4P-0lY" secondAttribute="trailing" constant="10" id="tJI-iA-R9J"/>
+                            <constraint firstItem="VxX-nt-gIZ" firstAttribute="top" secondItem="6m0-4P-0lY" secondAttribute="bottom" constant="4" id="zSZ-rY-ho3"/>
                         </constraints>
                     </view>
                     <connections>
